@@ -1,3 +1,5 @@
+"use client";
+
 import { createConfig, http } from "wagmi";
 import { base, baseSepolia } from "wagmi/chains";
 import { getDefaultConfig } from "connectkit";
@@ -9,7 +11,7 @@ export const config = createConfig(
       [baseSepolia.id]: http(),
       [base.id]: http(),
     },
-
+    ssr: true,
     walletConnectProjectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID!,
     appName: "Dripcast",
   }),
