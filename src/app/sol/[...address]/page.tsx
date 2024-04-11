@@ -29,7 +29,7 @@ const Product = ({ params }: { params: { address: string } }) => {
 
   const setDripContract = async () => {
     const dripContract = getContract({
-      address: params.address as `0x${string}`,
+      address: params.address[1] as `0x${string}`,
       abi: DripsABI,
       client: publicClient,
     });
