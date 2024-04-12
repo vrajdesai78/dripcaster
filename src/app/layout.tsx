@@ -5,6 +5,7 @@ import { Navbar } from "@/components";
 import Providers from "./providers";
 import { Toaster } from "react-hot-toast";
 require("@solana/wallet-adapter-react-ui/styles.css");
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({
   children,
@@ -18,6 +19,7 @@ export default function RootLayout({
           <Navbar />
           {children}
         </Providers>
+        <Analytics />
         <Toaster position="bottom-center" />
       </body>
     </html>

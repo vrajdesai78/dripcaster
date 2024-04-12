@@ -32,6 +32,9 @@ dependencies:
   "@tanstack/react-query":
     specifier: ^5.28.6
     version: 5.28.6(react@18.2.0)
+  "@vercel/analytics":
+    specifier: ^1.2.2
+    version: 1.2.2(next@14.1.4)(react@18.2.0)
   "@wormhole-foundation/wormhole-connect":
     specifier: ^0.3.3
     version: 0.3.3(@babel/core@7.24.3)(@babel/runtime@7.24.1)(@types/react-dom@18.2.22)(@types/react@18.2.69)(bs58@4.0.1)(expo@50.0.14)(fastestsmallesttextencoderdecoder@1.0.22)(google-protobuf@3.21.2)(react-dom@18.2.0)(react-native@0.73.6)(react@18.2.0)(redux@4.2.1)(tslib@2.6.2)(typescript@5.4.3)
@@ -10045,6 +10048,25 @@ packages:
       "@urql/core": 2.3.6(graphql@15.8.0)
       graphql: 15.8.0
       wonka: 4.0.15
+    dev: false
+
+  /@vercel/analytics@1.2.2(next@14.1.4)(react@18.2.0):
+    resolution:
+      {
+        integrity: sha512-X0rctVWkQV1e5Y300ehVNqpOfSOufo7ieA5PIdna8yX/U7Vjz0GFsGf4qvAhxV02uQ2CVt7GYcrFfddXXK2Y4A==,
+      }
+    peerDependencies:
+      next: ">= 13"
+      react: ^18 || ^19
+    peerDependenciesMeta:
+      next:
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      next: 14.1.4(@babel/core@7.24.3)(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      server-only: 0.0.1
     dev: false
 
   /@wagmi/connectors@3.1.11(@types/react@18.2.69)(react@18.2.0)(typescript@5.4.3)(viem@1.21.4):
@@ -22648,6 +22670,13 @@ packages:
       send: 0.18.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /server-only@0.0.1:
+    resolution:
+      {
+        integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==,
+      }
     dev: false
 
   /set-blocking@2.0.0:
