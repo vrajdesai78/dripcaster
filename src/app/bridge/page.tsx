@@ -26,7 +26,7 @@ const config: WormholeConnectConfig = {
   // },
 };
 
-const Withdraw = () => {
+const Bridge = () => {
   return (
     <div className="w-full pt-20 pb-5 px-5 md:px-40">
       <WormholeConnect config={config} />
@@ -34,4 +34,4 @@ const Withdraw = () => {
   );
 };
 
-export default Withdraw;
+export default Bridge;
