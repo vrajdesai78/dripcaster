@@ -35,7 +35,7 @@ export default function Home() {
             src="/svgs/asset-d.svg"
             className="w-44 hidden md:flex absolute right-8 bottom-10 animate-wiggle"
           />
-          <p className="text-lg font-primary text-teal-300">Ship crazy 🚀</p>
+          <p className="text-lg font-primary text-[#ADE1FF]">Ship crazy 🚀</p>
           <h1 className="text-6xl md:text-7xl font-title tracking-tight font-semibold">
             <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#ffd84b] from-[20%] to-[#b67e2b]">
               Built for new
@@ -51,7 +51,7 @@ export default function Home() {
             memberships, courses, and more—right to your audience on <b>Frames.</b>
           </p>
           <button
-            className="w-fit mt-5 px-7 py-2 text-lg text-neutral-800 font-primary font-medium bg-teal-400 hover:bg-teal-500 border-2 border-neutral-100 hover:border-neutral-300 rounded-3xl"
+            className="w-fit mt-5 px-7 py-2 text-lg text-neutral-800 font-primary font-medium bg-[#ADE1FF]/90 hover:bg-[#ADE1FF] border-2 border-neutral-100 hover:border-neutral-300 rounded-3xl"
             onClick={() => {
               router.push("/products/new");
             }}

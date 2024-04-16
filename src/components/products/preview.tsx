@@ -11,7 +11,7 @@ const ContentPreview = ({ content }: any) => {
       ) {
         return (
           <Image
-            className="mx-auto w-[14rem] h-[14rem] bg-gradient-to-tr from-teal-500 to-sky-400 rounded-lg object-fill"
+            className="mx-auto w-[14rem] h-[14rem] bg-gradient-to-tr from-[#ADE1FF] to-sky-400 rounded-lg object-fill"
             src={URL.createObjectURL(content)}
             alt="Preview"
             width={200}
@@ -25,7 +25,7 @@ const ContentPreview = ({ content }: any) => {
       ) {
         return (
           <video
-            className="mx-auto w-[20rem] h-[14rem] bg-gradient-to-tr from-teal-500 to-sky-400 rounded-lg object-fill"
+            className="mx-auto w-[20rem] h-[14rem] bg-gradient-to-tr from-[#ADE1FF] to-sky-400 rounded-lg object-fill"
             controls
             src={URL.createObjectURL(content)}
           />
@@ -33,7 +33,7 @@ const ContentPreview = ({ content }: any) => {
       } else if (content.name.endsWith(".pdf")) {
         return (
           <iframe
-            className="mx-auto w-[20rem] h-[14rem] bg-gradient-to-tr from-teal-500 to-sky-400 rounded-lg object-fill"
+            className="mx-auto w-[20rem] h-[14rem] bg-gradient-to-tr from-[#ADE1FF] to-sky-400 rounded-lg object-fill"
             src={URL.createObjectURL(content)}
             title="Preview"
             width="400"
@@ -44,7 +44,7 @@ const ContentPreview = ({ content }: any) => {
     }
     return (
       <Image
-        className="mx-auto w-[14rem] h-[14rem] bg-gradient-to-tr from-teal-500 to-sky-400 rounded-lg object-fill"
+        className="mx-auto w-[14rem] h-[14rem] bg-gradient-to-tr from-[#ADE1FF] to-sky-400 rounded-lg object-fill"
         src={"/images/preview-icon.png"}
         alt="Preview"
         width={200}

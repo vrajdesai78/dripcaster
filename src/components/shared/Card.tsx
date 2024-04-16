@@ -12,7 +12,7 @@ interface Card {
 
 const Card = ({ name, price, image, label, link }: Card) => {
   return (
-    <div className="flex flex-col w-fit bg-[#141414] bg-opacity-20 backdrop-filter backdrop-blur-sm rounded-xl shadow-md p-6">
+    <div className="flex flex-col w-fit bg-[#141414] bg-opacity-70 border border-neutral-800 backdrop-filter backdrop-blur-sm rounded-xl shadow-md p-6">
       <Image
         src={
           image === ""
@@ -26,8 +26,8 @@ const Card = ({ name, price, image, label, link }: Card) => {
         className="object-fill bg-amber-400 w-[14rem] h-[14rem] rounded-xl"
       />
       <h2 className="text-xl text-teal-400 font-primary font-medium truncate mt-3">{name}</h2>
-      <span className="flex flex-row justify-between items-center">
-        <p className="text-gray-300 font-primary font-normal">{price} ETH</p>
+      <span className="flex flex-row justify-between items-center mt-1">
+        <p className="text-gray-300 font-primary font-normal w-[46%] truncate">{price} ETH</p>
         <button
           onClick={() =>
             window.open(
@@ -35,7 +35,7 @@ const Card = ({ name, price, image, label, link }: Card) => {
               "_blank",
             )
           }
-          className="bg-gradient-to-br from-[#ffd84b] from-[20%] to-[#b67e2b] hover:from-[#ffd643] hover:from-[20%] hover:to-[#c18d40] font-primary font-medium items-center rounded-lg px-5 py-1.5 cursor-pointer"
+          className="bg-gradient-to-br from-[#b67e2b] from-[20%] to-[#ffd84b] hover:from-[#c18d40] hover:from-[20%] hover:to-[#ffd643] font-primary font-medium items-center rounded-lg px-4 py-1.5 cursor-pointer"
         >
           {label}
         </button>

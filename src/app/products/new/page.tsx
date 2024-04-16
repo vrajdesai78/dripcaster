@@ -167,7 +167,7 @@ const CreateProduct: NextPage = () => {
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10">
             <div className="flex flex-col items-center justify-center gap-5 mb-5">
               <Image
-                className="mx-auto w-[14rem] h-[14rem] bg-gradient-to-tr from-teal-500 to-sky-400 rounded-lg object-fill"
+                className="mx-auto w-[14rem] h-[14rem] bg-gradient-to-tr from-[#ADE1FF] to-sky-400 rounded-lg object-fill"
                 src={productImage !== "" ? productImage : "/images/preview.png"}
                 alt="preview"
                 width={200}
@@ -305,7 +305,7 @@ const CreateProduct: NextPage = () => {
                 });
               }
             }}
-            className="w-full text-neutral-900 hover:text-neutral-800 bg-gradient-to-tr from-teal-400 to-sky-500 hover:from-teal-300 hover:to-sky-400 rounded-lg px-5 py-2.5 text-center font-medium shadow disabled:opacity-75 disabled:cursor-progress"
+            className="w-full text-neutral-900 hover:text-neutral-800 bg-gradient-to-tr from-[#ADE1FF] to-sky-500 hover:from-teal-300 hover:to-sky-400 rounded-lg px-5 py-2.5 text-center font-medium shadow disabled:opacity-75 disabled:cursor-progress"
             disabled={isImageUploading || isContentUploading || isLoading}
           >
             {isImageUploading || isContentUploading

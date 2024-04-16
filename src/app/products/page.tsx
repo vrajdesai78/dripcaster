@@ -166,8 +166,8 @@ const Products: NextPage = () => {
                       image={product.image}
                       link={product.productAddress}
                       label={
-                        <span className="flex flex-row gap-2">
-                          Share on <FarcasterIcon className="w-6 h-6" />
+                        <span className="flex flex-row gap-2 items-center">
+                          Share on <FarcasterIcon className="w-4 h-4" />
                         </span>
                       }
                     />
